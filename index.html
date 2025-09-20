@@ -12,6 +12,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 </head>
 
@@ -94,10 +95,10 @@
                         cutting-edge solutions.
                     </p>
                     <p>
-                        Beyond coding, you can find me trying to break my 5K record time, relaxing with my family and
-                        two cats or drinking a good cup of coffee. I'm always eager to take on new challenges and
+                        Beyond coding, you can find me playing ping pong, relaxing with my family
+                        or drinking a good cup of ginger tea. I'm always eager to take on new challenges and
                         contribute to projects that make a difference.
-                    </p> 
+                    </p>
                 </div>
             </div>
         </div>
@@ -110,7 +111,7 @@
             </h2>
             <div class="row g-4">
                 <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="skill-card">
+                    <div class="skill-card h-100">
                         <h3><i class="fas fa-star icon text-yellow-500"></i> Frontend</h3>
                         <ul>
                             <li>HTML5 & CSS3 (Bootstrap, SCSS)</li>
@@ -123,18 +124,18 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="skill-card">
+                    <div class="skill-card  h-100">
                         <h3><i class="fas fa-briefcase icon text-green-500"></i> Backend</h3>
                         <ul>
                             <li>Nodejs</li>
                             <li>Php (Laravel)</li>
                             <li>RESTful APIs</li>
-                            <li>Database Management (phpMyAdmin)</li>
+                            <li>Database Management (phpMyAdmin), (MySQL)</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="skill-card">
+                    <div class="skill-card  h-100">
                         <h3><i class="fas fa-award icon text-blue-500"></i> Tools & Others</h3>
                         <ul>
                             <li>Git & GitHub</li>
@@ -155,9 +156,19 @@
             </h2>
             <div class="row g-4">
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="project-card">
-                        <img src="https://placehold.co/600x400/66b2b2/FFFFFF?text=Project+1" alt="Project 1"
-                            class="card-img-top" />
+                    <div class="project-card h-100">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="Screenshot (60).png" alt="Project 1"
+                                        class="card-img-top" /></div>
+                                <div class="swiper-slide"><img src="Screenshot (61).png"></div>
+                                <div class="swiper-slide"><img src="Screenshot (62).png"></div>
+                            </div>
+                            <!-- Pagination and navigation -->
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
                         <div class="card-body">
                             <h3 class="card-title">E-commerce Platform</h3>
                             <p class="card-text">
@@ -186,9 +197,19 @@
                 </div>
 
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="project-card">
-                        <img src="https://placehold.co/600x400/FFDAB9/66b2b2?text=Project+2" alt="Project 2"
-                            class="card-img-top" />
+                    <div class="project-card h-100">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="Screenshot (22).png" alt="Project 1"
+                                        class="card-img-top" /></div>
+                                <div class="swiper-slide"><img src="Screenshot (24).png"></div>
+                                <div class="swiper-slide"><img src="Screenshot (27).png"></div>
+                            </div>
+                            <!-- Pagination and navigation -->
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
                         <div class="card-body">
                             <h3 class="card-title">Property Management system</h3>
                             <p class="card-text">
@@ -218,13 +239,24 @@
                 </div>
 
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="project-card">
-                        <img src="https://placehold.co/600x400/87CEEB/FFFFFF?text=Project+3" alt="Project 3"
-                            class="card-img-top" />
+                    <div class="project-card h-100">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="Screenshot (57).png" alt="Project 1"
+                                        class="card-img-top" /></div>
+                                <div class="swiper-slide"><img src="Screenshot (58).png"></div>
+                                <div class="swiper-slide"><img src="Screenshot (59).png"></div>
+                            </div>
+                            <!-- Pagination and navigation -->
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
                         <div class="card-body">
                             <h3 class="card-title">Hotel website</h3>
                             <p class="card-text">
-                                It is a mobile platform that simplifies the guest experience from booking to checkout. It
+                                It is a mobile platform that simplifies the guest experience from booking to checkout.
+                                It
                                 allows users to easily reserve rooms, manage their stay, and access services like room
                                 service and local recommendations, making travel more convenient.
                             </p>
@@ -236,11 +268,12 @@
                                 <span class="badge bg-green-100">Laravel</span>
                             </div>
                             <div class="project-links d-flex">
-                                <a href="https://github.com/myGigi12/hotel-app" target="_blank" rel="noopener noreferrer" class="me-3">
+                                <a href="https://github.com/myGigi12/hotel-app" target="_blank"
+                                    rel="noopener noreferrer" class="me-3">
                                     <i class="fab fa-github icon"></i> GitHub
                                 </a>
                                 <a href="https://hopelandluxuryhotels.com" target="_blank" rel="noopener noreferrer">
-                                    <i class="fas fa-external-link-alt icon"></i> Live Demo 
+                                    <i class="fas fa-external-link-alt icon"></i> Live Demo
                                 </a>
                             </div>
                         </div>
@@ -300,6 +333,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         // JavaScript for Scroll to Top Button
         const scrollToTopBtn = document.getElementById('scrollToTopBtn');
@@ -354,6 +388,14 @@
                     behavior: 'smooth'
                 });
             });
+        });
+
+        // swiper slider
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            autoplay: { delay: 3000 },
+            pagination: { el: '.swiper-pagination', clickable: true },
+            navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }
         });
     </script>
 </body>
