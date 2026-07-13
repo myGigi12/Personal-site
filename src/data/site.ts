@@ -1,6 +1,7 @@
 export const site = {
   name: "Nengi Theophilus",
   shortName: "NT",
+
   role: "Full-Stack Developer",
 
   email: "your@email.com",
@@ -9,5 +10,5 @@ export const site = {
 
   linkedin: "https://linkedin.com/in/yourusername",
 
-  portfolio: "https://yourdomain.com",
+  portfolio: "",
 };
