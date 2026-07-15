@@ -24,3 +24,4 @@ export const navigation = [
     href: "/contact",
   },
 ];
+export const resumeLink = "/resume.pdf";
