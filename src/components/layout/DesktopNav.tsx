@@ -1,10 +1,11 @@
+import Link from "next/link";
 import { navigation } from "@/data/navigation";
 
 export default function DesktopNav() {
   return (
     <div className="hidden items-center gap-8 lg:flex">
       {navigation.map((item) => (
-        <a
+        <Link
           key={item.label}
           href={item.href}
           className="
@@ -18,11 +19,13 @@ export default function DesktopNav() {
           "
         >
           {item.label}
-        </a>
+        </Link>
       ))}
 
       <a
         href="/resume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
         className="
           rounded-xl
           bg-gradient-to-r
