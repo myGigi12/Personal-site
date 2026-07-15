@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { navigation } from "@/data/navigation";
+import { navigation, resumeLink } from "@/data/navigation";
 
 export default function DesktopNav() {
   return (
@@ -23,23 +23,10 @@ export default function DesktopNav() {
       ))}
 
       <a
-        href="/resume.pdf"
+        href={resumeLink}
         target="_blank"
         rel="noopener noreferrer"
-        className="
-          rounded-xl
-          bg-gradient-to-r
-          from-violet-600
-          to-cyan-500
-          px-5
-          py-2.5
-          text-sm
-          font-semibold
-          text-white
-          transition-all
-          duration-300
-          hover:scale-105
-        "
+        className="..."
       >
         Resume
       </a>
