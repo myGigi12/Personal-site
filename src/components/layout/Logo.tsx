@@ -1,39 +1,40 @@
 import Link from "next/link";
-import { site } from "@/data/site";
 
 export default function Logo() {
   return (
     <Link
       href="/"
       className="group flex items-center gap-3"
-      aria-label="Go to homepage"
     >
+      {/* Logo Mark */}
       <div
         className="
           flex h-11 w-11 items-center justify-center
-          rounded-2xl
+          rounded-xl
           border border-white/10
           bg-gradient-to-br
           from-violet-500/20
-          via-slate-900
           to-cyan-500/20
           backdrop-blur-xl
-          transition-all
-          duration-300
+          transition-all duration-300
           group-hover:scale-105
           group-hover:border-violet-400/40
-          group-hover:shadow-[0_0_30px_rgba(139,92,246,.25)]
         "
       >
-        <span className="font-bold tracking-wider text-white">
-          {site.shortName}
+        <span className="text-sm font-bold tracking-wider text-white">
+          NT
         </span>
       </div>
 
+      {/* Brand Name */}
       <div className="hidden sm:block">
-        <h2 className="text-lg font-semibold tracking-wide text-white">
-          Nengi<span className="text-violet-400">.</span>
-        </h2>
+        <p className="text-xs uppercase tracking-[0.35em] text-slate-500">
+          Portfolio
+        </p>
+
+        <h1 className="text-lg font-semibold tracking-[0.25em] text-white">
+          NENGI
+        </h1>
       </div>
     </Link>
   );
